@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: var(--red);
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header .title {
+  line-height: 120%;
+  color: #fff;
+}
+
+header .paragraph {
+  font-weight: 400;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .seven-days-free {
+  color: white;
+  background: var(--blue);
+  color: white;
+  width: 100%;
+  box-shadow: 0px 12px 0px 0px rgba(0, 0, 0, 0.125);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+main .seven-days-free .bold {
+  font-weight: bold;
+}
+
+main form {
+  width: 100%;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+main form .input-field {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+main form .input-field input {
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+  transition: 0.2s ease;
+  font-weight: 600;
+  border: 1px solid var(--grayish-blue);
+  color: var(--dark-blue);
+  outline: none;
+}
+
+main form .input-field input:focus {
+  border-color: var(--dark-blue);
+}
+
+main .free-trial-button {
+  color: #fff;
+  border: 0;
+  box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.125);
+  background: var(--green);
+  border-radius: 1rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  transition: 0.2s ease;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main .free-trial-button:hover {
+  filter: brightness(1.15);
+}
+
+main .terms-of-services {
+  text-align: center;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--grayish-blue);
+}
+
+main .terms-of-services .red {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 931px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    margin-top: 0;
+    margin-right: 5rem;
+  }
+
+  header .paragraph {
+    max-width: 40vw;
+    margin-top: 3rem;
+  }
+
+  main {
+    margin: 0;
+    width: 45vw;
+  }
+
+  main .seven-days-free {
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  body {
+    background-image: url("./images/bg-intro-mobile.png");
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 9rem;
+  }
+
+  header .title {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  header .paragraph {
+    font-size: 1.8rem;
+    max-width: 93.33vw;
+  }
+
+  main {
+    width: 93.33vw;
+  }
+
+  main .seven-days-free {
+    margin-top: 8rem;
+    margin-bottom: 3.5rem;
+  }
+
+  main form .input-field {
+    margin-bottom: 1.5rem;
+  }
+}
