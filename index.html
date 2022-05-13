@@ -47,41 +47,81 @@
         $20/mo. thereafter
       </div>
 
-      <form>
-        <div class="input-field">
-          <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            placeholder="First Name"
-          />
+      <form novalidate id="form">
+        <div class="input-field" id="first-name-input-field">
+          <div class="input-container">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First Name"
+            />
+
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon"
+              alt="Red exclamation mark that represents an error"
+            />
+          </div>
+
+          <span id="first-name-error" class="error-message"></span>
         </div>
 
-        <div class="input-field">
-          <input
-            type="text"
-            id="last-name"
-            name="last-name"
-            placeholder="Last Name"
-          />
+        <div class="input-field" id="last-name-input-field">
+          <div class="input-container">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last Name"
+            />
+
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon"
+              alt="Red exclamation mark that represents an error"
+            />
+          </div>
+
+          <span id="last-name-error" class="error-message"></span>
         </div>
 
-        <div class="input-field">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-          />
+        <div class="input-field" id="email-input-field">
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+            />
+
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon"
+              alt="Red exclamation mark that represents an error"
+            />
+          </div>
+
+          <span id="email-error" class="error-message"></span>
         </div>
 
-        <div class="input-field">
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-          />
+        <div class="input-field" id="password-input-field">
+          <div class="input-container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+
+            <img
+              src="./images/icon-error.svg"
+              class="error-icon"
+              alt="Red exclamation mark that represents an error"
+            />
+          </div>
+
+          <span id="password-error" class="error-message"></span>
         </div>
 
         <div class="free-trial-button-wrapper">
@@ -105,5 +145,7 @@
         >. Coded by <a href="#">Arthur Lage</a>.
       </p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
